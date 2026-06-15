@@ -177,9 +177,9 @@ function showResult() {
 
   <p>${result.description}</p>
 
-  <canvas id="chart" width="300" height="300"></canvas>
+  <canvas id="chart"></canvas>
 
-  <div >
+  <div id="percent">
     <p>せら ${Math.round(scores.sera/total*100)}%</p>
     <p>ノエル ${Math.round(scores.noel/total*100)}%</p>
     <p>レイ ${Math.round(scores.rei/total*100)}%</p>
@@ -209,7 +209,15 @@ function showResult() {
           scores.rei,
           scores.nana,
           scores.nemu
-        ]
+        ],
+        backgroundColor: [
+        "#ffb6c1",
+        "#98fb98",
+        "#87ceeb",
+        "#ffd700",
+        "#dda0dd"
+        ],
+        
       }]
     }
 

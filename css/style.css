@@ -9,16 +9,6 @@ body{
     border:solid black;
 }
 
-.container{
-    width:90%;
-    max-width:700px;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 0 20px rgba(0,0,0,0.1);
-    text-align:center;
-}
-
 .hidden{
     display:none;
 }
@@ -29,9 +19,26 @@ h1,h2,h3{
 
 
 canvas{
-    max-width: 550px;
     border: 1px solid red;
-    align-items: center;   /* 中央揃え（不要なら消す） */
+    display: block;
+}
+
+#percent{
+    display: flex;
+}
+
+.chart-container{
+    width: min(80vw, 400px);
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    position: relative;
+    border:solid orange;
+}
+
+#chart{
+    width: 100% !important;
+    height: 100% !important;
+    border:solid purple;
 }
 
 img {
@@ -112,8 +119,3 @@ button {
     height: 50px;
 }
 
-.chart-container{
-    width: min(70vw, 400px);
-    height: min(70vw, 400px);
-    margin: 0 auto;
-}
